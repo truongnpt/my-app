@@ -20,6 +20,7 @@ export const Gift = (props) => {
       setCheckCode(true);
     }
   }
+  
   return (
     <StyledGift>
         <Container className="loading hero-section d-flex flex-column justify-content-xl-center">
