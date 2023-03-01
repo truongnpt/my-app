@@ -231,7 +231,7 @@ export const StyledMessage = styled.section`
     background-size: 100%;
     filter: drop-shadow(2px 4px 10px #f1f1f1);
     animation: fly 5s linear;
-    transform: translateY(-135px);
+    transform: translateY(-21vh);
 
     h5 {
       position: absolute;
@@ -251,7 +251,7 @@ export const StyledMessage = styled.section`
     }
 
     100% {
-      transform: translateY(-135px);
+      transform: translateY(-21vh);
     }
 }
 `;
