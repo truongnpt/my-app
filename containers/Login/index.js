@@ -6,7 +6,7 @@ export const Login = (props) => {
     const { setComponent } = props;
 
     const handleClick = () => {
-      setComponent('main');
+      setComponent('message');
     }
   return (
     <StyledLogin>
@@ -16,11 +16,11 @@ export const Login = (props) => {
             <StyledHeroTitle>
                   Hi Hi!
                   <br />
-                  <h2>Lu Y</h2>
+                  <h2>🌼 Emmm 🌼</h2>
                 </StyledHeroTitle>
                 <div className="hero-image pulse mt-5 m-auto">
                   <Image
-                    src={'/luy.jpeg'}
+                    src={'/kc.jpeg'}
                     width={200}
                     height={200}
                     alt="avata"
@@ -33,7 +33,7 @@ export const Login = (props) => {
                   className="button d-flex m-auto"
                   onClick={() => handleClick()}
                 >
-                  <span>Get Start</span>
+                  <span>Nhấn vào đây nhé</span>
                 </Button>
               </div>
           </Col>

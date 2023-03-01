@@ -6,4 +6,8 @@ export const StyledHome = styled.main`
   height: 100vh;
   background: white;
   color: white;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
 `;

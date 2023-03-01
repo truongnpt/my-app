@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledMain = styled.section`
   height: 100%;
-  background: #a00061;
+  background: #d31c8b;
 
   .top-image {
     text-align: right;
@@ -17,14 +17,17 @@ export const StyledMain = styled.section`
 
   .loading {
       animation: loading 0.5s linear;
+      transform: translateY(0px);
     }
 
   @keyframes loading {
     from {
       transform: scale(0.8);
+      transform: translateY(40px);
     } 
     to {
       transform: scale(1);
+      transform: translateY(0px);
     }
   }
 
@@ -154,7 +157,7 @@ export const StyledMain = styled.section`
 
   &:hover {
     background: #fff;
-    color: #a00061;
+    color: #d31c8b;
     transform: translateY(-3px);
   }
 }

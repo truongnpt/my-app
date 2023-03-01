@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledGift = styled.section`
   height: 100%;
-  background: #a00061;
+  background: #d31c8b;
 
   .gift-card {
     position: relative;
@@ -43,14 +43,17 @@ export const StyledGift = styled.section`
 
   .loading {
       animation: loading 0.5s linear;
+      transform: translateY(0px);
     }
 
   @keyframes loading {
     from {
       transform: scale(0.8);
+      transform: translateY(40px);
     } 
     to {
       transform: scale(1);
+      transform: translateY(0px);
     }
   }
 
@@ -180,7 +183,7 @@ export const StyledGift = styled.section`
 
   &:hover {
     background: #fff;
-    color: #a00061;
+    color: #d31c8b;
     transform: translateY(-3px);
   }
 }
