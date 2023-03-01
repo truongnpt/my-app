@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledLogin = styled.section`
   height: 100%;
-  background: #a00061;
+  background: #d31c8b;
 
   .hero-image {
     text-align: center;
@@ -130,7 +130,7 @@ export const StyledLogin = styled.section`
 
   &:hover {
     background: #fff;
-    color: #a00061;
+    color: #d31c8b;
     transform: translateY(-3px);
   }
 }
