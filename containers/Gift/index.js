@@ -7,7 +7,7 @@ export const Gift = (props) => {
   const { setComponent } = props;
   const [code, setCode] = useState('');
   const [checkCode, setCheckCode] = useState(false);
-  const compactCode = '123';
+  const compactCode = '0204';
 
   const handleChange = (value) => {
     setCode(value);
@@ -23,10 +23,10 @@ export const Gift = (props) => {
   
   return (
     <StyledGift>
-        <Container className="loading hero-section d-flex flex-column justify-content-xl-center">
+        <Container className="hero-section d-flex flex-column justify-content-xl-center">
         <Row className="align-items-center justify-content-between">
           <Col className="col-9 mt-2 py-0">
-              <h3>Trương Thị Trúc Luy</h3>
+              <h3>Trúc Luy</h3>
           </Col>
           <Col className="col-3 mt-2 py-0">
               <div className="top-image">
@@ -41,7 +41,7 @@ export const Gift = (props) => {
           </Col>
         </Row>
         <hr className="mt-2" />
-        <Row>
+        <Row className='loading'>
           <Col className="col-12 col-lg-6">
                 <div className="gift-card mt-2 m-auto">
                   <Image

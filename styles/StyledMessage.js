@@ -21,14 +21,17 @@ export const StyledMessage = styled.section`
 
   .loading {
       animation: loading 0.5s linear;
+      transform: translateY(0px);
     }
 
   @keyframes loading {
     from {
       transform: scale(0.8);
+      transform: translateY(40px);
     } 
     to {
       transform: scale(1);
+      transform: translateY(0px);
     }
   }
 

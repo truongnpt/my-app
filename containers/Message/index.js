@@ -10,10 +10,10 @@ export const Message = (props) => {
   }
   return (
     <StyledMessage>
-        <Container className="loading hero-section d-flex flex-column justify-content-xl-center">
+        <Container className="hero-section d-flex flex-column justify-content-xl-center">
         <Row className="align-items-center justify-content-between">
           <Col className="col-9 mt-2 py-0">
-              <h3>Trương Thị Trúc Luy</h3>
+              <h3>Trúc Luy</h3>
           </Col>
           <Col className="col-3 mt-2 py-0">
               <div className="top-image">
@@ -28,25 +28,29 @@ export const Message = (props) => {
           </Col>
         </Row>
         <hr className="mt-2" />
-        <Row>
+        <Row className='loading'>
           <Col className="col-12 col-lg-6">
               <Card>
                 <StyledCard>
                   <h5>Sinh nhật vui vẻ nha Luy ơi!</h5>
                   <p>
-                    Tuổi mới chúc bạn ngày càng xinh, luôn vui vẻ, sức khoẻ dồi dào, làm tiền vào như nước và những điều bạn ước sẽ thành hiện thực nha.
+                    Hôm nay sinh nhật bạn, chúc bạn tuổi mới ngày càng xinh, luôn tràn đầy niềm vui, và hạnh phúc bên nha, làm tiền vào như nước và những điều bạn ước sẽ thành hiện thực nha.
                   </p>
                   <p>
-                    Chơi chung với nhau cũng 10 năm rầu.
+                    <b><i>Và đây là mình kiếm trên mạng:</i>😁</b>
                   </p>
                   <p>
-                    Có thể là do mình nghĩ nhiều 😁, đôi khi tui thấy tui dới bạn nói chiện không hợp nhau lắm ák.
-                  </p>
-                  <p>
-                    Ý nói dẩy thâu. Những gì qua thì cho qua đi hen. Chúng ta xứng đáng có 1 cuộc sống tốt hơn🌞.
-                  </p>
-                  <p>
-                    Viết nhiêu đây thấy cũng nhiều rầu. Lần nữa chúc bạn sinh nhật vui vẻ nha.
+                    Sinh nhật vui vẻ ý nghĩa nha
+                    <br/>
+                    Chúc cho hạnh phúc đậm đà tình yêu
+                    <br/>
+                    Chúc cho sức khỏe thật nhiều
+                    <br/>
+                    Chúc cho may mắn vạn điều bình an
+                    <br/>
+                    Lắm tiền nhiều bạc giàu sang
+                    <br/>
+                    Niềm vui hạnh phúc càng ngày càng xinh.
                   </p>
                   <p className="d-flex justify-content-end"><i>--Trường Npt--</i></p>
                 </StyledCard>
