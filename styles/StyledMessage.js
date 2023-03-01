@@ -2,11 +2,67 @@ import styled from 'styled-components';
 
 export const StyledMessage = styled.section`
   height: 100%;
-  background: #a00061;
+  background: #d31c8b;
 
   .card {
     background-color: #ffffffa6 !important;
   }
+
+  .user-name {
+    display: flex;
+    align-items: center;
+  }
+  .rotating {
+      width: fit-content;
+      -webkit-animation: rotating 6s linear infinite;
+      -moz-animation: rotating 6s linear infinite;
+      -ms-animation: rotating 6s linear infinite;
+      -o-animation: rotating 6s linear infinite;
+      animation: rotating 6s linear infinite;
+      border-radius: 100%;
+      overflow: hidden;
+    }
+
+
+  @keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+  .heart-btn {
+    margin-top: 115px !important;
+
+    span {
+      margin-top: 5px;
+      animation: heart 1s linear infinite;
+      animation-delay: 0.3s
+    }
+  }
+
+  @keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
   .top-image {
     text-align: right;
@@ -21,14 +77,17 @@ export const StyledMessage = styled.section`
 
   .loading {
       animation: loading 0.5s linear;
+      transform: translateY(0px);
     }
 
   @keyframes loading {
     from {
       transform: scale(0.8);
+      transform: translateY(40px);
     } 
     to {
       transform: scale(1);
+      transform: translateY(0px);
     }
   }
 
@@ -67,17 +126,18 @@ export const StyledMessage = styled.section`
 
 
 .pulse {
-    height: 200px;
-    width: 200px;
+    height: 140px;
+    width: 140px;
     min-width: 100px;
     border: none;
-    background-color: orange;
+    background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     box-shadow: 2px 2px 20px white;
+    font-size: 40px;
 }
 
 .pulse::before {
@@ -129,10 +189,6 @@ export const StyledMessage = styled.section`
     }
 }
 
-.hero-content--learn-more {
-  margin-top: 50px;
-}
-
 .button {
   background: none;
   border: 3px solid #fff;
@@ -158,9 +214,45 @@ export const StyledMessage = styled.section`
 
   &:hover {
     background: #fff;
-    color: #a00061;
+    color: #d31c8b;
     transform: translateY(-3px);
   }
+}
+
+.heart-gift {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url('/heart-fly.gif');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: drop-shadow(2px 4px 10px #f1f1f1);
+    animation: fly 5s linear;
+    transform: translateY(-135px);
+
+    h5 {
+      position: absolute;
+      bottom: 115px;
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      font-weight: bold;
+      font-family: cursive;
+      text-shadow: 0 0 10px #fff;
+    }
+  }
+
+  @keyframes fly {
+    0% {
+      transform: translateY(250px);
+    }
+
+    100% {
+      transform: translateY(-135px);
+    }
 }
 `;
 
