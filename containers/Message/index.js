@@ -6,10 +6,11 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 export const Message = (props) => {
   const { setComponent } = props;
   const [showHeart, setShowHeart] = useState(false);
+  const [playAudio, setPlayAudio] = useState(false);
 
   const handleClick = () => {
-    console.log('ok');
     setShowHeart(true);
+    setPlayAudio(true);
   }
   return (
     <StyledMessage>
@@ -63,6 +64,22 @@ export const Message = (props) => {
       {showHeart && (
         <div className="heart-gift">
           <h5>T & C</h5>
+        </div>
+      )}
+
+      {!playAudio && (
+        <div className="hide">
+          <audio controls autoPlay>
+            <source src="/audio-1.mp3" type="audio/mpeg"></source>
+          </audio>
+        </div>
+      )}
+
+      {playAudio && (
+        <div className="hide">
+          <audio controls autoPlay>
+            <source src="/audio-2.mp3" type="audio/mpeg"></source>
+          </audio>
         </div>
       )}
     </StyledMessage>

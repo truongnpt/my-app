@@ -4,6 +4,10 @@ export const StyledMessage = styled.section`
   height: 100%;
   background: #d31c8b;
 
+  .hide {
+    opacity: 0;
+    position: absolute;
+  }
   .card {
     background-color: #ffffffa6 !important;
   }
